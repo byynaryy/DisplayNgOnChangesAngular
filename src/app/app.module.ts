@@ -4,15 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisplayComponent } from './display/display.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './parent/child/child.component';
+import { ElternComponent } from './eltern/eltern.component';
+import { KinderComponent } from './eltern/kinder/kinder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayComponent,
-    ParentComponent,
-    ChildComponent
+    ElternComponent,
+    KinderComponent,
   ],
   imports: [
     BrowserModule,
