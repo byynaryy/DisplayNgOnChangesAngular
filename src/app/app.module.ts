@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisplayComponent } from './display/display.component';
 import { SendComponent } from './display/send/send.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayComponent,
-    SendComponent
+    SendComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

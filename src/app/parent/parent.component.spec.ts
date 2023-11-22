@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SendComponent } from './send.component';
+import { ParentComponent } from './parent.component';
 
-describe('SendComponent', () => {
-  let component: SendComponent;
-  let fixture: ComponentFixture<SendComponent>;
+describe('ParentComponent', () => {
+  let component: ParentComponent;
+  let fixture: ComponentFixture<ParentComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SendComponent]
+      declarations: [ParentComponent]
     });
-    fixture = TestBed.createComponent(SendComponent);
+    fixture = TestBed.createComponent(ParentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
