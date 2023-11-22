@@ -13,4 +13,10 @@ export class ElternComponent {
     displayData: string = '';
 
     constructor(private dataService: DataserviceService) { }
+
+    ngOnInit() {
+        this.dataService.data$.subscribe((data: string) => {
+          this.displayData = data; // Update displayedData when data changes
+        });
+    }
 }
