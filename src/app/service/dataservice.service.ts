@@ -10,4 +10,8 @@ export class DataserviceService {
     data$: Observable<string> = this.dataSubject.asObservable();
 
     constructor() { }
+
+    updateData(newValue: string) {
+        this.dataSubject.next(newValue);
+    }
 }
