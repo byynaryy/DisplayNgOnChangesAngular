@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { DataserviceService} from '../../service/dataservice.service';
+
 
 @Component({
   selector: 'app-kinder',
@@ -8,4 +10,6 @@ import { Component, Input } from '@angular/core';
 export class KinderComponent {
 
     @Input() item: string = ''; // decorate the property with @Input()
+
+    constructor(private dataService: DataserviceService) { }
 }

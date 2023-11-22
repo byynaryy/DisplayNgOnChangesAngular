@@ -12,7 +12,7 @@ import { KinderComponent } from './eltern/kinder/kinder.component';
     AppComponent,
     DisplayComponent,
     ElternComponent,
-    KinderComponent,
+    KinderComponent
   ],
   imports: [
     BrowserModule,
