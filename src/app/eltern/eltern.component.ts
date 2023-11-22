@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataserviceService } from '../service/dataservice.service';
 
 @Component({
   selector: 'app-eltern',
@@ -10,4 +11,6 @@ export class ElternComponent {
     currentItem = 'Television'
 
     displayData: string = '';
+
+    constructor(private dataService: DataserviceService) { }
 }
