@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { DataserviceService} from '../../service/dataservice.service';
 
 
@@ -12,4 +12,12 @@ export class KinderComponent {
     @Input() item: string = ''; // decorate the property with @Input()
 
     constructor(private dataService: DataserviceService) { }
+
+    ngOnChanges(changes: SimpleChanges) {
+        if (changes['item']) {
+            console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', changes['item'].currentValue);
+            const newValue = changes['item'].currentValue;
+            this.dataService.updateData(newValue); // Update the data in the service
+        }
+    }
 }
